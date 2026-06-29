@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Event Registration Form</h2>
+
+        <form>
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter phone number" required>
+
+            <label for="event">Select Event</label>
+            <select id="event" name="event" required>
+                <option value="">Choose Event</option>
+                <option>Tech Conference</option>
+                <option>Hackathon</option>
+                <option>Workshop</option>
+                <option>Seminar</option>
+            </select>
+
+            <label for="event-date">Event Date</label>
+            <input id="event-date" name="event-date" type="date" required>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <input id="male" type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input id="other" type="radio" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Any notes..."></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
