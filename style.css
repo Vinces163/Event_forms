@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
@@ -25,6 +26,13 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+}
+
+h3 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 label {
@@ -62,8 +70,54 @@ button {
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
     background: #008cff;
+}
+
+button.secondary-button {
+    background: #6c757d;
+}
+
+button.secondary-button:hover {
+    background: #5a6268;
+}
+
+/* Page Routing Styles */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.confirmation-content {
+    text-align: center;
+}
+
+.confirmation-message {
+    color: #28a745;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.confirmation-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.confirmation-details p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.confirmation-details span {
+    font-weight: bold;
+    color: #4facfe;
 }
